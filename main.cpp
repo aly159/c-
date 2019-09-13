@@ -1,22 +1,19 @@
 #include <iostream>
-
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
 {
     int x;
-    int counter=0;
     cin>>x;
-    while (x>=1)
+    int arr[x];
+    for(int i=0;i<x;i++)
         {
-        bool a,b,c;
-        cin>>a>>b>>c;
-        if(a==1 && b==1 && c==1 || a==1 && b==1 && c==0 || a==1 && b==0 && c==1 || a==0 && b==1 && c==1)
-        {
-            counter++;
+           cin>>arr[i];
         }
-        x--;
-        }
-    cout<<counter<<endl;
+         sort(arr,arr+x);
+    for(int i=0;i<x;i++)
+        cout<<arr[i]<<" ";
+
     return 0;
 }
