@@ -1,19 +1,14 @@
 #include <iostream>
-#include<bits/stdc++.h>
+
 using namespace std;
 
 int main()
 {
-    int x;
-    cin>>x;
-    int arr[x];
-    for(int i=0;i<x;i++)
-        {
-           cin>>arr[i];
-        }
-         sort(arr,arr+x);
-    for(int i=0;i<x;i++)
-        cout<<arr[i]<<" ";
-
+    int a ,b=0;
+    cin>>a;
+    a*=2;
+    while (a/=2)
+        b+=a%2;
+    cout<<b<<endl;
     return 0;
 }
